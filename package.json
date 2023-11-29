@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "esm": "^3.2.25",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.6.5"
+  },
+  "scripts": {
+    "start": "node -r ./node_modules/esm/esm.js server.js"
+  }
+}
