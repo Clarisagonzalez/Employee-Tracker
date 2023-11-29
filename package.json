@@ -6,6 +6,6 @@
     "mysql2": "^3.6.5"
   },
   "scripts": {
-    "start": "node -r ./node_modules/esm/esm.js server.js"
+    "start": "node server.js"
   }
 }

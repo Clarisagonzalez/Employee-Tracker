@@ -18,7 +18,7 @@ function handleAction(action) {
     case 'View all departments':
       viewAllDepartments();
       break;
-    // Add more cases for other actions
+    
     default:
       console.log('Invalid action.');
       break;
@@ -249,7 +249,15 @@ function promptForAction() {
       type: 'list',
       name: 'action',
       message: 'What would you like to do?',
-      choices: ['View all departments', 'View all roles', 'View all employees', 'Add a department', 'Add a role', 'Add an employee', 'Update an employee role']
+      choices: [
+       'View all departments', 
+       'View all roles',
+       'View all employees',
+        'Add a department', 
+        'Add a role',
+        'Add an employee',
+        'Update an employee role',
+        ],
     })
     .then((answers) => {
       // Handle the selected action
@@ -265,4 +273,3 @@ function promptForAction() {
 
 // Start the application by prompting for the first action
 promptForAction();
-
